@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ManageMoney6</string>
+    <string name="themtien">Add money</string>
+    <string name="thongke">Statistical</string>
+    <string name="tilechia">Split rate</string>
+    <string name="goi_thieu">Introduce</string>
+    <string name="cai_dat">Setting</string>
+    <string name="hu_nec">Jar NEC</string>
+    <string name="hu_ltss">Jar LTSS</string>
+    <string name="hu_educ">Jar EDUC</string>
+    <string name="hu_play">Jar PLAY</string>
+    <string name="hu_give">Jar GIVE</string>
+    <string name="hu_ffa">Jar FFA</string>
+    <string name="nhap_so_tien">Enter the money...</string>
+    <string name="so_tien_da_dung_nec">The money used of NEC</string>
+    <string name="so_tien_da_dung_ltss">The money used of LTSS</string>
+    <string name="so_tien_da_dung_educ">The money used of EDUC</string>
+    <string name="so_tien_da_dung_play">The money used of PLAY</string>
+    <string name="so_tien_da_dung_give">The money used of GIVE</string>
+    <string name="so_tien_da_dung_ffa">The money used of FFA</string>
+    <string name="hay_nhap_so_tien_da_dung">Let to enter the money used !</string>
+    <string name="nhap_gia_tri">Enter value</string>
+    <string name="ti_le_chia_khong_hop_le">Invalid percentage</string>
+    <string name="thay_doi">Change</string>
+</resources>

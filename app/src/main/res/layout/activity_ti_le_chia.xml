@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TiLeChia"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:gravity="center|right"
+        android:paddingRight="20dp">
+        <Button
+            android:id="@+id/btnChangeTiLeChia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thay_doi"
+            android:background="#fcfcfc"
+            android:textColor="#0320f9"
+            android:textStyle="bold"
+            android:paddingRight="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/bieuDoTiLeChia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.github.mikephil.charting.charts.PieChart>
+
+    </LinearLayout>
+</LinearLayout>

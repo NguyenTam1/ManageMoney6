@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ManageMoney6</string>
+    <string name="themtien">Thêm tiền</string>
+    <string name="thongke">Thống kê</string>
+    <string name="tilechia">Tỉ lệ chia</string>
+    <string name="goi_thieu">Giới thiệu</string>
+    <string name="cai_dat">Cài đặt</string>
+    <string name="hu_nec">Hủ NEC</string>
+    <string name="hu_ltss">Hủ LTSS</string>
+    <string name="hu_educ">Hủ EDUC</string>
+    <string name="hu_play">Hủ PLAY</string>
+    <string name="hu_give">Hủ GIVE</string>
+    <string name="hu_ffa">Hủ FFA</string>
+    <string name="nhap_so_tien">Nhập số tiền...</string>
+    <string name="so_tien_da_dung_nec">Số tiền đã dùng của NEC</string>
+    <string name="so_tien_da_dung_ltss">Số tiền đã dùng của LTSS</string>
+    <string name="so_tien_da_dung_educ">Số tiền đã dùng của EDUC</string>
+    <string name="so_tien_da_dung_play">Số tiền đã dùng của PLAY</string>
+    <string name="so_tien_da_dung_give">Số tiền đã dùng của GIVE</string>
+    <string name="so_tien_da_dung_ffa">Số tiền đã dùng FFA</string>
+    <string name="hay_nhap_so_tien_da_dung">Hãy nhập số tiền đã dùng !</string>
+    <string name="nhap_gia_tri">Nhập giá trị</string>
+    <string name="ti_le_chia_khong_hop_le">Tỉ lệ chia không hợp lệ</string>
+    <string name="thay_doi">Thay đổi</string>
+</resources>
