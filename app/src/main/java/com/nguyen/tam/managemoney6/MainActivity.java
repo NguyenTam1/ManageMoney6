@@ -1,12 +1,14 @@
 package com.nguyen.tam.managemoney6;
 
 import android.app.Dialog;
+import android.content.ActivityNotFoundException;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -14,6 +16,7 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView txtvNec, txtvLtss, txtvEduc, txtvGive, txtvPlay, txtvFfa;
     TextView txtvPhanTramNec, txtvPhanTramLtss, txtvPhanTramEduc, txtvPhanTramPlay,
             txtvPhanTramGive, txtvPhanTramFfa;
+    ImageView imgMoreApp;
     EditText edtThemTien, edtUsed, edtLtss;
     Long nec, ltss, educ, play, give, ffa;
     Long nec2, ltss2, educ2, play2, give2, ffa2, id2;
@@ -57,6 +61,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         llHuGive.setOnClickListener(this);
         llHuFaa.setOnClickListener(this);
         llTiLeChia.setOnClickListener(this);
+        llMoreApp.setOnClickListener(this);
+        imgMoreApp.setOnClickListener(this);
+
         hienThiTien();
     }
 
@@ -183,6 +190,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txtvPhanTramGive = findViewById(R.id.txtvPhanTramGive);
         txtvPhanTramPlay = findViewById(R.id.txtvPhanTramPlay);
         txtvPhanTramFfa = findViewById(R.id.txtvPhanTramFfa);
+        imgMoreApp = findViewById(R.id.txtvMoreApp);
     }
 
     @Override
@@ -213,7 +221,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.ll_TiLeChia:
                 Intent intent = new Intent(MainActivity.this, TiLeChia.class);
                 startActivity(intent);
-                this.finish();
+                break;
+            case R.id.ll_MoreApp:
+                Uri uri2 = Uri.parse("https://play.google.com/store/apps/developer?id=TT+Group");
+                Intent goToMarket2 = new Intent(Intent.ACTION_VIEW, uri2);
+                try {
+                    startActivity(goToMarket2);
+                } catch (ActivityNotFoundException e) {
+
+                    startActivity(new Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("https://play.google.com/store/apps/developer?id=TT+Group")));
+                }
+                break;
+            case R.id.txtvMoreApp:
+                Uri uri = Uri.parse("https://play.google.com/store/apps/developer?id=TT+Group");
+                Intent goToMarket = new Intent(Intent.ACTION_VIEW, uri);
+                try {
+                    startActivity(goToMarket);
+                } catch (ActivityNotFoundException e) {
+
+                    startActivity(new Intent(
+                            Intent.ACTION_VIEW,
+                            Uri.parse("https://play.google.com/store/apps/developer?id=TT+Group")));
+                }
                 break;
         }
 

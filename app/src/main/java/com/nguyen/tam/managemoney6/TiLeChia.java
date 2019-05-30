@@ -43,6 +43,8 @@ public class TiLeChia extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ti_le_chia);
+        this.setTitle(R.string.tilechia);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         pieChart = findViewById(R.id.bieuDoTiLeChia);
         btnChangeTiLeChia = findViewById(R.id.btnChangeTiLeChia);
         // doc du lieu database goi chia
@@ -183,6 +185,14 @@ public class TiLeChia extends AppCompatActivity {
                         }
                     }
                 });
+                //
+                btnHuy.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog1.cancel();
+                    }
+                });
+                dialog1.setCancelable(false);
                 dialog1.show();
             }
         });

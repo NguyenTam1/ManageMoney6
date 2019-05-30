@@ -16,7 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TiLeChia"></activity>
+        <activity android:name=".TiLeChia">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.nguyen.tam.managemoney6.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

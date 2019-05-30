@@ -40,7 +40,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginRight="10dp"
-                        android:hint="@string/nhap_gia_tri"/>
+                        android:hint="@string/nhap_gia_tri"
+                        />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
